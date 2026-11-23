@@ -50,6 +50,20 @@ def main():
         caller=u.reg_read(UC_MIPS_REG_RA)
         if boundary['armed'] and m.symbols['h1_app_main']<=caller<m.symbols['h1_app_main']+main_size:boundary.update(armed=False,hit=True);u.emu_stop()
     m.u.hook_add(UC_HOOK_CODE,loop_boundary,begin=m.symbols['qq_idle'],end=m.symbols['qq_idle'])
+    handoff_boundary={'pre_begin_pause':False,'clock_advanced':False}
+    def before_handoff_begin(u,*_):
+        # Exercise a legal CPU slice ending after the handoff flag, while its
+        # status paint is still pending and the wait's start time is unset.
+        if not handoff_boundary['pre_begin_pause'] and m.word('qq_usb_handoff')==1:
+            handoff_boundary['pre_begin_pause']=True;u.emu_stop()
+    def in_handoff_wait(u,*_):
+        caller=u.reg_read(UC_MIPS_REG_RA)
+        if not handoff_boundary['clock_advanced'] and m.word('qq_usb_handoff')==1 and m.symbols['h1_app_main']<=caller<m.symbols['h1_app_main']+main_size:
+            # begin=qq_time() has now executed. Advancing before this boundary
+            # merely shifts begin and leaves the whole 12-second wait intact.
+            m.put(m.symbols['clock_base'],struct.pack('<I',m.word('clock_base')+13000));handoff_boundary['clock_advanced']=True
+    m.u.hook_add(UC_HOOK_CODE,before_handoff_begin,begin=m.symbols['paint'],end=m.symbols['paint'])
+    m.u.hook_add(UC_HOOK_CODE,in_handoff_wait,begin=m.symbols['fw_delay'],end=m.symbols['fw_delay'])
     m.files[r'A:\H1QQ.ID']=make_record(key=bytes(range(32)),clock_adjustment=0);m.u.mem_map(0x10003000,0x1000);m.put(0xb0003000,struct.pack('<II',1,1795305600));gateway=Gateway();bridge=None;checks=[];rejection='--login-rejected' in sys.argv;gateway.reject_login=rejection;qr_rejected='--qr-rejected' in sys.argv;gateway.bad_qr=qr_rejected
     m.files[r'A:\H1QQ.HAND']=b'1';m.owned_paths.add(r'A:\H1QQ.HAND')
     m.owned_paths.update([r'A:\H1QQ.ID',*[data_dir+'\\H1QQ.'+s for s in ('ID','LOG','ERR','QR','HAND','SES')]])
@@ -84,7 +98,9 @@ def main():
         assert not m.drawing and not m.timer_running;data=search_inputs.pop(0).encode()+b'\0';assert len(data)<=u.reg_read(UC_MIPS_REG_A1);m.put(u.reg_read(UC_MIPS_REG_A0),data);u.reg_write(UC_MIPS_REG_V0,1);u.reg_write(UC_MIPS_REG_PC,u.reg_read(UC_MIPS_REG_RA))
     m.u.hook_add(UC_HOOK_CODE,search_edit,begin=m.symbols['qq_edit_search'],end=m.symbols['qq_edit_search'])
     try:
-        until(lambda:m.word('qq_usb_handoff')==1);assert r'A:\H1QQ.HAND' not in m.files;m.put(m.symbols['clock_base'],struct.pack('<I',m.word('clock_base')+13000));checks.append('one-shot USB handoff marker consumed before transport acquisition')
+        until(lambda:m.word('qq_usb_handoff')==1);assert r'A:\H1QQ.HAND' not in m.files
+        until(lambda:handoff_boundary['clock_advanced']);assert handoff_boundary['pre_begin_pause'];report['handoff_clock_advanced_at_wait']=True
+        checks.append('one-shot USB handoff consumes its marker; time advances at the actual wait boundary even after a forced pre-begin pause')
         until(lambda:m.get(meta['debug_mailbox']['address']+16,4)==b'\1\0\0\0');mailbox.ROOT=ROOT;bridge=mailbox.MailboxBridge(m,path);bridge.backend.close();bridge.server=Server(gateway);bridge.backend=bridge.server
         bridge.server.hold_next_pull=navigation
         if qr_rejected:
