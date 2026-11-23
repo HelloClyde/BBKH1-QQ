@@ -1,0 +1,1 @@
+Vendored from https://github.com/kmackay/micro-ecc (master snapshot retrieved 2026-11-22). BSD-2-Clause; see LICENSE.txt. Source bytes are pinned by the login build manifest. Generic C, 32-bit words, only secp256r1 enabled for the H1 build. No assembly or host crypto dependency.

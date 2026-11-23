@@ -1,0 +1,41 @@
+{
+  "source": "h1-qq-native/design/qq2008-idle/preview.png",
+  "source_sha256": "abc3a48a5a84b54cc9de79114b2938d07949ea187cae440325c0d9089060574a",
+  "mode": "approved built-in GPT Image artwork; mechanical crop/resize/RGB565 packing only",
+  "native_size": [
+    480,
+    272
+  ],
+  "regions": {
+    "idle": {
+      "bounds": [
+        154,
+        22,
+        480,
+        272
+      ],
+      "size": [
+        326,
+        250
+      ],
+      "png_sha256": "294a9af6461d14423ba091ada2a1d3960286e5abc379014952eecd45d118e2f6",
+      "raw_sha256": "9b83b751d06b6f6476f409040a5aa99af04aad60a0aa4fadfd246b9782e60d1c"
+    },
+    "brand": {
+      "bounds": [
+        0,
+        0,
+        396,
+        22
+      ],
+      "size": [
+        396,
+        22
+      ],
+      "png_sha256": "78f45d7b9816493974a937c112ea26da2ca7ac5dcd7e828d1466187d314cece7",
+      "raw_sha256": "b751fc5f7deff58fc609c4f73fb81fe9a914c6fc6a85d53a9456c0b5c5b9b764"
+    }
+  },
+  "header_sha256": "e265888a9423b95a8cded1b3cc7e4b8feb477141c5a8dd67db3794452872840b",
+  "packer_sha256": "306c9dd54f2b06f74ca252e029bd264dec2c32cfc4e9977f4e18a00d484e47e6"
+}

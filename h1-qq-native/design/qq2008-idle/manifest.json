@@ -1,0 +1,12 @@
+{
+  "status": "implemented-candidate-awaiting-device",
+  "mode": "built-in GPT Image reference edit",
+  "image": "preview.png",
+  "sha256": "abc3a48a5a84b54cc9de79114b2938d07949ea187cae440325c0d9089060574a",
+  "references": [
+    "h1-qq-native/app/assets/skin2008/approved.png",
+    "build/h1-qq-native/qq2008-bitmap-font/skin-friends.png",
+    "h1-qq-native/app/assets/qq-h1-gpt.png"
+  ],
+  "candidate_dir": "build/h1-qq-native/qq2008-idle"
+}

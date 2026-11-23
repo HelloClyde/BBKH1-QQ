@@ -1,0 +1,7 @@
+{
+  "referenced_image_paths": [
+    "h1-qq-native/design/qq2008-idle/preview.png"
+  ],
+  "transparent_background": true,
+  "prompt": "Use case: background-extraction. Asset type: a single transparent QQ 2008 toolbar mascot sprite. Reference image: the approved blue QQ2008 application mockup. Extract ONLY the large central black-and-white penguin with red scarf and yellow beak and feet, keeping its identity, front-facing pose and classic glossy QQ2008 illustration style. Produce one centered penguin on an actual transparent alpha background, tightly framed with a little margin. Simplify the fine highlights just enough that the silhouette reads cleanly when reduced to a 20x20 pixel toolbar icon. No blue tile, no rounded-square application icon plate, no frame, no button, no ground shadow, no text, no arrows, no UI background. This asset will be composited onto the existing light-blue footer; keep that footer out of the output."
+}

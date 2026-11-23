@@ -1,0 +1,9 @@
+{
+  "project": "https://github.com/TakWolf/fusion-pixel-font",
+  "release": "2026.11.10",
+  "asset_url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.11.10/fusion-pixel-font-12px-monospaced-bdf-v2026.11.10.zip",
+  "asset_sha256": "bbf8efa39f165dee5e52ed1c2ccc21f7d7d32dd6e536190cba55065220b2c0a5",
+  "bdf_file": "fusion-pixel-12px-monospaced-zh_hans.bdf.gz",
+  "bdf_uncompressed_sha256": "fce624869a7ddc228b45173d8a9f9a3a7a7f3e86ad8008d23d5611218d608f08",
+  "compressed_sha256": "5cb2597e1fcda2eafea01098223fdaf71d72777ce4f542a946249430d9553fc3"
+}

@@ -1,0 +1,17 @@
+{
+  "renderer": "built-in GPT Image edit; Pillow sprite packing",
+  "source_file": "qq-h1-gpt.png",
+  "source_sha256": "53bc2787ef3fa951047382edae837107bf474cf806bb00f434fbb988f1726fd5",
+  "official_reference_url": "https://static-res.qq.com/static-res/imqq/qq-logo.png",
+  "official_reference_page": "https://im.qq.com/index",
+  "prompt_file": "qq-image-prompt.txt",
+  "prompt_sha256": "2532f0d2c95798ebccb09806f2ef2b34a50ffe7cc5369de8421cd998c707cc4d",
+  "packed_alpha_bounds": [
+    144,
+    149,
+    1094,
+    1110
+  ],
+  "png_sha256": "c65304d66bb76dd10c69c6555917fa57dfc1d55803d6ac253d2f488ce9d6a39d",
+  "header_sha256": "d83e37be4a78fef7e164596bb3fc17913e788ecd6d6a59a91bd0b400b9a20d3a"
+}

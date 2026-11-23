@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png -text
+*.gz -text
+*.jpg -text
+*.rgb565 -text
+h1-qq-native/third_party/** -whitespace
+third_party/** -whitespace
+h1-qq-native/app/assets/font12/OFL-*.txt -whitespace

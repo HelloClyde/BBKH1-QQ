@@ -1,0 +1,5 @@
+{
+  "repository": "https://github.com/HelloClyde/bbk-h1-bda-sdk.git",
+  "commit": "58bb60d2cf9b7783f5bc31ed35d6e28606871ec7",
+  "minimum_esp32_firmware": "0.4.6"
+}

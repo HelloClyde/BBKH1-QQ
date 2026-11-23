@@ -1,0 +1,96 @@
+{
+  "renderer": "built-in GPT Image reference edit; Pillow crop/resize/packing only",
+  "approved_sha256": "81d39c7837158d49a26e7b8e1feeb721a76293dc435f1cdfbd3e6d398d3fce0b",
+  "clouds_sha256": "4a22ef1dcf97558b189968784a91fd072c95d38c693da1e7405f0b8a93e3cd3d",
+  "icons_sha256": "5cb639e7d0c0f4969c8adf50cb96a078b973b1922afaad364e6fc283442f8282",
+  "header_crop": [
+    0,
+    150,
+    2172,
+    467
+  ],
+  "header_sha256": "aa52099aad8d14590fb61a6717e4dd7f76222c4561436aa80b16203ffb76b470",
+  "skin_header_sha256": "d1d101878add174cf785fe5ccef4e66c0cf02a35d784040060a02116f3d9efa7",
+  "icons": [
+    {
+      "name": "group",
+      "cell": 0,
+      "alpha_crop": [
+        92,
+        118,
+        363,
+        363
+      ]
+    },
+    {
+      "name": "recent",
+      "cell": 1,
+      "alpha_crop": [
+        97,
+        114,
+        349,
+        370
+      ]
+    },
+    {
+      "name": "search",
+      "cell": 2,
+      "alpha_crop": [
+        93,
+        107,
+        349,
+        366
+      ]
+    },
+    {
+      "name": "refresh",
+      "cell": 3,
+      "alpha_crop": [
+        97,
+        115,
+        348,
+        365
+      ]
+    },
+    {
+      "name": "edit",
+      "cell": 4,
+      "alpha_crop": [
+        100,
+        94,
+        352,
+        362
+      ]
+    },
+    {
+      "name": "online",
+      "cell": 5,
+      "alpha_crop": [
+        99,
+        108,
+        344,
+        358
+      ]
+    },
+    {
+      "name": "menu",
+      "cell": 6,
+      "alpha_crop": [
+        80,
+        93,
+        359,
+        364
+      ]
+    },
+    {
+      "name": "message",
+      "cell": 7,
+      "alpha_crop": [
+        92,
+        132,
+        355,
+        325
+      ]
+    }
+  ]
+}

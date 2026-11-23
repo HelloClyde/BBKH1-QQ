@@ -1,0 +1,17 @@
+{
+  "status": "implemented-candidate-awaiting-device",
+  "mode": "built-in GPT Image reference edit",
+  "final_image": "preview.png",
+  "sha256": "7894beb48b323bd9f01942ad5ce3b6137e30ae8117be168292c0fd8e8a38705f",
+  "qr_is_synthetic_placeholder": true,
+  "dynamic_at_implementation": [
+    "QR pixels",
+    "login state text",
+    "refresh input"
+  ],
+  "references": [
+    "h1-qq-native/design/qq2008-idle/preview.png",
+    "h1-qq-native/app/assets/qq-h1-gpt.png"
+  ],
+  "candidate_dir": "build/h1-qq-native/qq2008-login"
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+ <defs>
+  <linearGradient id="tile" x2="0" y2="1"><stop stop-color="#c5f4ff"/><stop offset=".45" stop-color="#43b0e3"/><stop offset="1" stop-color="#247caf"/></linearGradient>
+  <linearGradient id="body" x2=".75" y2="1"><stop stop-color="#475867"/><stop offset=".45" stop-color="#18242c"/><stop offset="1" stop-color="#070f18"/></linearGradient>
+  <linearGradient id="belly" x2="0" y2="1"><stop stop-color="white"/><stop offset="1" stop-color="#d9e7ee"/></linearGradient>
+  <linearGradient id="scarf" x2="0" y2="1"><stop stop-color="#ff594b"/><stop offset="1" stop-color="#bd1427"/></linearGradient>
+ </defs>
+ <rect x="3" y="3" width="122" height="122" rx="25" fill="url(#tile)" stroke="#316a91" stroke-width="3"/>
+ <rect x="6" y="6" width="116" height="116" rx="22" fill="none" stroke="#daf8ff" stroke-width="2"/>
+ <ellipse cx="64" cy="108" rx="39" ry="9" fill="#175b85" opacity=".35"/>
+ <path d="M42 93Q26 93 24 108Q39 117 59 108L67 100Z" fill="#ffbc30" stroke="#b36c16" stroke-width="2"/>
+ <path d="M86 93Q102 94 104 108Q88 117 69 108L61 100Z" fill="#ffbc30" stroke="#b36c16" stroke-width="2"/>
+ <path d="M38 63Q24 65 17 88Q21 93 35 83L45 71Z" fill="#16252f"/>
+ <path d="M90 63Q104 65 111 88Q108 94 93 83L83 71Z" fill="#16252f"/>
+ <path d="M34 61Q29 24 48 17Q64 10 80 18Q98 25 93 63Q106 94 89 104Q64 117 39 104Q23 94 34 61Z" fill="url(#body)" stroke="#13232d" stroke-width="2"/>
+ <ellipse cx="64" cy="82" rx="26" ry="26" fill="url(#belly)"/>
+ <ellipse cx="52" cy="39" rx="10" ry="16" fill="white"/>
+ <ellipse cx="76" cy="39" rx="10" ry="16" fill="white"/>
+ <ellipse cx="55" cy="42" rx="4" ry="7" fill="#101c24"/>
+ <ellipse cx="73" cy="42" rx="4" ry="7" fill="#101c24"/>
+ <ellipse cx="56" cy="39" rx="1.4" ry="2" fill="white"/>
+ <ellipse cx="74" cy="39" rx="1.4" ry="2" fill="white"/>
+ <path d="M45 53Q64 44 83 53Q77 64 64 64Q51 63 45 53Z" fill="#ffbd36" stroke="#d58a20" stroke-width="1.5"/>
+ <path d="M49 55Q64 60 79 55" fill="none" stroke="#c48120" stroke-width="1.5"/>
+ <path d="M33 62Q64 74 95 62L94 72Q65 85 34 72Z" fill="url(#scarf)" stroke="#a51d2c" stroke-width="1.5"/>
+ <path d="M73 73L84 73L84 91L72 87Z" fill="#d92836" stroke="#a51d2c" stroke-width="1.5"/>
+ <path d="M11 29Q17 8 41 10L100 10Q116 12 118 28Q62 7 11 39Z" fill="white" opacity=".23"/>
+</svg>

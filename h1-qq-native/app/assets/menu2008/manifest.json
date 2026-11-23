@@ -1,0 +1,19 @@
+{
+  "renderer": "built-in GPT Image extraction; mechanical alpha crop/resize/ARGB packing",
+  "source": "penguin-gpt.png",
+  "source_sha256": "8ccf749b4148dbbf636e4005d5ee37929f02a22a4a68d3c9bf4915e35964975c",
+  "prompt_sha256": "e5c44681dc49d738bff6186230dc9ae86ae797a331d31146f0531696533c2dcd",
+  "alpha_crop": [
+    255,
+    160,
+    1053,
+    1070
+  ],
+  "size": [
+    20,
+    20
+  ],
+  "png_sha256": "2d2557d3e4bb1d34dcd4a1db541aadeb18cdad4cdba862999fcc5142075228ea",
+  "header_sha256": "9e0776890a6fa1dfc196428dfd5984e4880c85001fa07ef5fd607c7e45e42dcc",
+  "packer_sha256": "d01bca711c7451299dc7da8e0a093e9b940d470e7f0398e27298953ce7306e7b"
+}
